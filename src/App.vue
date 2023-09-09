@@ -1,7 +1,8 @@
 <template>
   <div class="flex h-full items-stretch min-h-screen">
-      <SideBar class="bg-gray-light-500 p-10 w-64" />
-      <UserList class="p-10 md:flex-grow" :users="userList" />
+      <SideBar :selectedUser="selectedUser" class="max-h-screen"/>
+      <UserList class="max-h-screen overflow-y-auto p-10 md:flex-grow"  :users="userList"
+      @update:selectedUser="updateSelectedUser" />
     </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
   },
   setup() {
     const userList = ref([]);
-
+    const selectedUser = ref(null);
     onMounted(async () => {
       try {
         const response = await axios.get(
@@ -31,9 +32,14 @@ export default {
         console.error("API isteği sırasında hata oluştu:", error);
       }
     });
+    const updateSelectedUser = (user) => {
+      selectedUser.value = user;
+    };
 
     return {
       userList,
+      selectedUser,
+      updateSelectedUser,
     };
   },
 };
