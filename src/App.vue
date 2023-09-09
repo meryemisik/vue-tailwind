@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex h-full items-stretch min-h-screen">
+      <SideBar class="bg-gray-light-500 p-10 w-64" />
+      <UserList class="p-10 md:flex-grow" :users="userList" />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, onMounted } from "vue";
+import axios from "axios";
+import SideBar from "./components/SideBar.vue";
+import UserList from "./components/UsersList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
-</script>
+    SideBar,
+    UserList,
+  },
+  setup() {
+    const userList = ref([]);
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    onMounted(async () => {
+      try {
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/users"
+        );
+        console.log("respo", response);
+        userList.value = response.data;
+      } catch (error) {
+        console.error("API isteği sırasında hata oluştu:", error);
+      }
+    });
+
+    return {
+      userList,
+    };
+  },
+};
+</script>
