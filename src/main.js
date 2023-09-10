@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './asset/css/main.css'
 import 'tailwindcss/tailwind.css';
-createApp(App).mount('#app')
+import store from "./store/store";
+import router from "./router/router"; // Vue Router'ı içe aktarın
+
+const app = createApp(App);
+app.use(store);
+app.use(router); // Vue Router'ı kullanıcı hizmetine ekleyin
+app.mount("#app");

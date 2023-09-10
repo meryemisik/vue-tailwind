@@ -11,8 +11,8 @@ module.exports = {
       },
       backgroundColor:{
         'gray-light': '#D8D9DD',
-        'purple' : '#4F359B'
-      }
+        'purple' : '#4F359B',
+      },
     },
   },
   plugins: [],
