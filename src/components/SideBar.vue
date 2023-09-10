@@ -129,10 +129,6 @@
         </div>
       </div>
     </div>
-    <!-- <div
-      v-else
-      class="h-full w-[260px] py-8 left-0 top-0 absolute bg-neutral-100 border-r border-zinc-300 flex-col justify-between items-center gap-[763px] inline-flex"
-    ></div> -->
   </aside>
 </template>
 

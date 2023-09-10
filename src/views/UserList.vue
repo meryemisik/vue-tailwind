@@ -91,8 +91,6 @@ export default {
     const selectUser = (user) => {
       selectedUser.value = user;
       store.commit("setSelectedUser", user);
-
-      // Seçilen kullanıcıyı localStorage'a kaydet
       localStorage.setItem("selectedUser", JSON.stringify(user));
 
       router.push("/todos");

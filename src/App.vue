@@ -7,8 +7,7 @@
 
 <script>
 import SideBar from "./components/SideBar.vue";
-import { mapGetters } from "vuex"; // Vuex state'ini kullanmak için
-
+import { mapGetters } from "vuex";
 export default {
   name: "App",
   components: {
@@ -17,7 +16,7 @@ export default {
   computed: {
     ...mapGetters({
       selectedUser : 'getSelectedUser'
-    }), // Vuex state'ini computed prop olarak kullanma
+    }),
   },
 };
 </script>
