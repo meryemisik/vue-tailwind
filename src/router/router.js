@@ -3,6 +3,7 @@ import TodosList from "../views/Todo.vue";
 import UserList from '../views/UserList'
 import Albums from '../views/Albums'
 import Posts from '../views/Posts'
+import AlbumsDetail from '../views/AlbumsDetail'
 const routes = [
   {
     path: "/",
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/posts",
     component: Posts,
+  },
+  {
+    path: "/albums/detail",
+    component: AlbumsDetail,
   },
 ];
 

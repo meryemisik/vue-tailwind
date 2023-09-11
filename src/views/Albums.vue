@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xl max-h-screen  p-10 md:flex-grow text-xl">
+  <div class="text-xl max-h-screen p-10 w-full">
     <div class="flex font-semibold gap-6 text-center items-center">
       <img
         src="../asset/icons/goToHome.svg"
@@ -8,26 +8,28 @@
       />
       <p class="">Go Home</p>
     </div>
-
-    <div
-      class="user-list flex flex-wrap max-h-screen thin-scrollbar"
-    >
-      <div class="p-4 grow shrink basis-1/3">
+   
+    <div class="flex flex-wrap max-h-screen thin-scrollbar overflow-y-auto " >
+      <div v-for="i in 12" :key="i" class="p-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div
-          class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+          class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-fit-content" @click="this.$router.push('/albums/detail')"
         >
-          <div class="flex flex-col gap-4 flex-start w-full">
-            <div class="flex flex-start gap-8">
-              <div class="h-24 w-24">
-                Meryem
+        <div class="flex flex-start" >
+              <div class=" h-auto w-[160px]">
+                <img src="../asset/image/album1.png" class="object-contain"/>
+                <img src="../asset/image/album4.png" class="object-contain"/>
+              </div>
+              <div class="h-auto w-[160px]">
+                <img src="../asset/image/album3.png" class="object-contain"/>
+                <img src="../asset/image/album2.png" class="object-contain"/>
               </div>
             </div>
-          </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
 </template>
+
 <script>
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";

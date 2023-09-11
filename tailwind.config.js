@@ -13,6 +13,9 @@ module.exports = {
         'gray-light': '#D8D9DD',
         'purple' : '#4F359B',
       },
+      width: {
+        'fit-content': 'fit-content',
+      },
     },
   },
   plugins: [],

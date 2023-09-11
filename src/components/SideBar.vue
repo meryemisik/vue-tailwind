@@ -13,7 +13,7 @@
             <img src="../asset/icons/users.svg" />
           </div>
 
-          <div class="w-[90.43px] text-violet-900 text-lg font-normal">
+          <div class="w-[90.43px] text-violet-900 text-lg font-normal invisible md:visible">
             Users
           </div>
         </div>
