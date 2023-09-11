@@ -1,0 +1,19 @@
+.thin-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 200px;
+  }
+
+  .thin-scrollbar::-webkit-scrollbar-track {
+    background: #f3f5f7;
+  }
+
+  .thin-scrollbar::-webkit-scrollbar-thumb {
+    background: #D8D9DD;
+  }
+
+  .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #D8D9DD;
+  }
+body{
+  overflow-x: hidden;
+}

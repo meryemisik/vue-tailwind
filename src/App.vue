@@ -1,7 +1,7 @@
 <template>
-  <div class="flex max-h-full items-stretch max-h-screen">
-      <SideBar :selectedUser="selectedUser" class="max-h-screen max-w-6"/>
-      <router-view class="w-[calc(100%-260px)]"/>
+  <div class="flex max-h-screen">
+      <SideBar :selectedUser="selectedUser"/>
+      <router-view class="max-w-[calc(100%-260px)]  overflow-hidden"/>
     </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
-  <div class="max-h-screen overflow-y-auto p-10">
+  <div class="max-h-screen p-10">
     <h2 class="text-[#26303E] font-semibold text-xl">
       All users
     </h2>
-    <div class="flex flex-wrap">
-      <div v-for="user in userList" :key="user.id" class="p-4 grow shrink basis-1/3">
+    <div class=" user-list flex flex-wrap max-h-screen overflow-y-auto thin-scrollbar ">
+      <div v-for="user in userList" :key="user.id" class="p-4 grow shrink basis-1/3 ">
         <div
           class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
           @click="selectUser(user)"
@@ -116,3 +116,8 @@ export default {
   },
 };
 </script>
+<style>
+.user-list > div:last-child {
+  margin-bottom: 70px; 
+}
+</style>

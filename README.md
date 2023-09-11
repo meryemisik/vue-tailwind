@@ -1,4 +1,4 @@
-# task-project
+# tailwind-demo
 
 ## Project setup
 ```
