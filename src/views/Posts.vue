@@ -14,7 +14,6 @@
           :key="index"
           class="border-b py-[20px] px-[32px] flex flex-col gap-3"
         >
-        {{ index }}
           <div
             class="w-[498px] text-[#26303E] text-lg font-medium leading-tight tracking-tight"
           >

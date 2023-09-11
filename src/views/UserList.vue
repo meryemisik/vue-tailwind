@@ -1,15 +1,15 @@
 <template>
-  <div class="max-h-screen overflow-y-auto p-10 md:flex-grow">
+  <div class="max-h-screen overflow-y-auto p-10">
     <h2 class="text-[#26303E] font-semibold text-xl">
       All users
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-      <div v-for="user in userList" :key="user.id" class="p-4">
+    <div class="flex flex-wrap">
+      <div v-for="user in userList" :key="user.id" class="p-4 grow shrink basis-1/3">
         <div
-          class="flex bg-white border rounded shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+          class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
           @click="selectUser(user)"
         >
-          <div class="flex flex-col gap-4 flex-start">
+          <div class="flex flex-col gap-4 flex-start w-full">
             <div class="flex flex-start gap-8">
               <div class="h-24 w-24">
                 <img
