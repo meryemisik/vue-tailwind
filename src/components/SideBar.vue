@@ -1,6 +1,4 @@
 <template>
-  <!-- component -->
-  <!-- component -->
   <div class="w-2/12 bg-[#F5F5F5] rounded shadow-lg border-r border-zinc-300 pt-[32px]">
     <ul class="text-sm w-full">
       <li>
@@ -17,7 +15,7 @@
             </div>
 
             <div
-              class="w-[90.43px] text-violet-900 text-lg font-normal invisible md:visible"
+              class="w-[90.43px] text-violet-900 text-lg font-normal invisible md:visible font-poppins"
             >
               Users
             </div>

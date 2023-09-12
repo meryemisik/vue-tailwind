@@ -9,7 +9,7 @@
       <p class="font-poppins">Go Home</p>
     </div>
     <div class="flex flex-wrap max-h-screen overflow-y-auto thin-scrollbar">
-      <div v-for="i in 12" :key="i" class="p-4 flex-grow flex-shrink-0 flex-basis-1/3 min-w-100 sm:flex-basis-1/2 md:flex-basis-1/1">
+      <div v-for="i in 12" :key="i" class="p-4 flex-grow flex-shrink-0 flex-basis-1/3 min-w-100 sm:flex-basis-1/2 md:flex-basis-1/1" @click="this.$router.push('albums/detail')">
         <div
           class="bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer min-w-[100%]"
         >

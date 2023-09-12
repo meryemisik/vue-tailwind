@@ -20,12 +20,12 @@
           {{ post.title }}
         </div>
         <div
-          class="text-black text-opacity-70 text-sm font-normal leading-tight tracking-tight font-poppins"
+          class="text-black text-opacity-70 text-sm font-normal leading-tight tracking-tight font-poppins leading-5 tracking-[0.28px]"
           v-html="getFirst30Words(post.body)"
         ></div>
         <div class="flex justify-end">
           <div
-            class="text-[#26303E] text-opacity-70 text-sm font-normal leading-tight tracking-tight flex items-center gap-6"
+            class="text-[#26303E] text-sm font-normal leading-tight tracking-tight flex items-center gap-6 font-poppins"
           >
             See More
             <img

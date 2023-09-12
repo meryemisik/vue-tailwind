@@ -1,15 +1,15 @@
 <template>
   <div class="max-h-screen p-10">
-    <h2 class="text-[#26303E] font-semibold text-xl">
-      All users
-    </h2>
+    <div class="flex font-semibold gap-6 text-center items-center">
+      <p class="font-poppins text-xl">All Users</p>
+    </div>
     <div class=" user-list flex flex-wrap max-h-screen overflow-y-auto thin-scrollbar overflow-x min-w-[300px]">
       <div v-for="user in userList" :key="user.id" class="p-4 flex grow shrink basis-1/3 min-w-100">
         <div
           class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer min-w-[100%]"
           @click="selectUser(user)"
         >
-          <div class="flex flex-col gap-4 flex-start w-full">
+          <div class="flex flex-col gap-4 flex-start w-full font-poppins">
             <div class="flex flex-start gap-8">
               <div class="h-24 w-24">
                 <img
@@ -18,7 +18,7 @@
                 />
               </div>
               <div class="flex flex-col justify-center ">
-                <p class="text-lg text-black font-medium break-words">{{ user.name }}</p>
+                <p class="text-lg  text-black font-medium break-words ">{{ user.name }}</p>
                 <p class="text-test font-light text-sm break-words">{{ user.email }}</p>
                 <p class="text-test font-light text-sm">{{ user.phone }}</p>
               </div>
@@ -40,7 +40,7 @@
             <div class="">
               <div class="flex gap-3">
                 <img src="../asset/icons/company.svg" />
-                <p class="mt-2 text-[#313E50] text-sm">Company</p>
+                <p class="mt-2 text-[#313E50] text-sm font-medium">Company</p>
               </div>
               <span class="text-[#5C6672] text-sm">{{
                 user.company.name
@@ -49,7 +49,7 @@
             <div class="">
               <div class="flex gap-3">
                 <img src="../asset/icons/website.svg" />
-                <p class="mt-2 text-[#313E50] text-sm">Website</p>
+                <p class="mt-2 text-[#313E50] text-sm font-medium">Website</p>
               </div>
               <span class="text-[#5C6672] text-sm">{{ user.website }}</span>
             </div>
