@@ -1,26 +1,26 @@
 <template>
-  <div class="text-xl max-h-screen overflow-y-auto p-10 md:flex-grow">
+  <div class="text-xl max-h-screen p-10 ">
     <div class="flex font-semibold gap-6 text-center items-center">
       <img
         src="../asset/icons/goToHome.svg"
         class="cursor-pointer"
         @click="goHome()"
       />
-      <p class="">Go Home</p>
+      <p class="font-poppins">Go Home</p>
     </div>
-    <div class="pt-[52px]">
+    <div class="pt-[52px] max-h-screen overflow-y-auto thin-scrollbar">
       <div
         v-for="(post, index) in postList"
         :key="index"
         class="border-b py-[20px] px-[32px] flex flex-col gap-3"
       >
         <div
-          class="w-[498px] text-[#26303E] text-lg font-medium leading-tight tracking-tight"
+          class="w-[498px] text-black text-lg font-medium leading-tight tracking-tight font-poppins tracking-[0.36px]"
         >
           {{ post.title }}
         </div>
         <div
-          class="text-black text-opacity-70 text-sm font-normal leading-tight tracking-tight"
+          class="text-black text-opacity-70 text-sm font-normal leading-tight tracking-tight font-poppins"
           v-html="getFirst30Words(post.body)"
         ></div>
         <div class="flex justify-end">

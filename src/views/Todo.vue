@@ -1,17 +1,17 @@
 <template>
-    <div class="text-xl max-h-screen overflow-y-auto p-10 md:flex-grow">
-      <div class="flex font-semibold gap-6 text-center items-center">
-        <img
-          src="../asset/icons/goToHome.svg"
-          class="cursor-pointer"
-          @click="goHome()"
-        />
-        <p class="">Go Home</p>
-      </div>
-      <div class="mt-[88px]">
-        <div v-for="(item, index) in itemList" :key="index" class="w-[653px] h-12 relative block truncate ">
+    <div class="text-xl max-h-screen p-10 ">
+    <div class="flex font-semibold gap-6 text-center items-center">
+      <img
+        src="../asset/icons/goToHome.svg"
+        class="cursor-pointer"
+        @click="goHome()"
+      />
+      <p class="font-poppins">Go Home</p>
+    </div>
+      <div class="pt-[52px] max-h-screen overflow-y-auto thin-scrollbar">
+        <div v-for="(item, index) in itemList" :key="index" class="h-12 relative block">
         <div
-          class="left-[48px] top-[14px] absolute text-[#485B69] text-sm font-normal leading-tight font-poppins"
+          class="left-[48px] top-[14px] absolute text-[#485B69] text-sm font-normal leading-tight font-roboto not-italic"
         >
           {{ item.text }}
         </div>
@@ -62,6 +62,9 @@
         { text: " Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque Sed ut. " },
         { text: " Curabitur tempor quis eros tempus lacinia. Nam bibendum " },
         { text: " Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque Sed ut." },
+        { text: "  Curabitur tempor quis eros tempus lacinia. Sed ut ." },
+        { text: " Curabitur tempor quis eros tempus lacinia. Nam bibendum Sed ut " },
+        { text: "  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque Sed ut " },
         { text: "  Curabitur tempor quis eros tempus lacinia. Sed ut ." },
         { text: " Curabitur tempor quis eros tempus lacinia. Nam bibendum Sed ut " },
         { text: "  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque Sed ut " }

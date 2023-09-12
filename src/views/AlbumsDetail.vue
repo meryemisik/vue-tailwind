@@ -6,7 +6,7 @@
         class="cursor-pointer"
         @click="goHome()"
       />
-      <p class="">Go Albums</p>
+      <p class="font-poppins">Go Albums</p>
     </div>
   
 
