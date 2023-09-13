@@ -17,7 +17,7 @@ module.exports = {
         'fit-content': 'fit-content',
       },
       screens: {
-        'xs': '320px',
+        'xs': '280px',
       },
     },
   },
