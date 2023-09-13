@@ -19,13 +19,6 @@ export default {
   setup() {
     const store = useStore();
     const selectedUser = computed(() => store.getters.getSelectedUser);
-    const router = useRouter()
-    let currentUrl = window.location.pathname;
-    currentUrl = currentUrl.replace(/\//g, '');
-
-    store.commit("setSelectedTab", currentUrl);
-    router.push('/'+ currentUrl)
-
     return {
       selectedUser,
     };

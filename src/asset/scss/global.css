@@ -27,4 +27,14 @@ font-family: 'Roboto', sans-serif !important;
 .font-josefin {
   font-family: 'Josefin Sans', sans-serif !important
 }
+.active-tab{
+  background-color: white !important;
+}
+.active-tab .active-bg{
+  background-color: #4F359B !important;
+}
+.active-tab .active-title{
+  color: #4F359B !important;
+  opacity: var(--text-opacity-40) !important;
+}
 

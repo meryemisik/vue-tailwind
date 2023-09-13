@@ -96,7 +96,6 @@ export default {
       localStorage.setItem("selectedUser", JSON.stringify(user));
 
       router.push("/todos");
-      store.commit("setSelectedTab", 'todos');
     };
     onMounted(async () => {
       try {
