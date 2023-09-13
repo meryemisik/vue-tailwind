@@ -8,7 +8,7 @@
       />
       <p class="font-poppins">Go Home</p>
     </div>
-    <div class="pt-[52px] max-h-screen overflow-y-auto thin-scrollbar">
+    <div class="pt-[52px] max-h-[100%] overflow-y-auto thin-scrollbar">
       <div
         v-for="(post, index) in postList"
         :key="index"

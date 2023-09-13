@@ -15,7 +15,7 @@
             </div>
 
             <div
-              class="w-[90.43px] text-violet-900 text-lg font-normal invisible md:visible font-poppins"
+              class="w-[90.43px] text-violet-900 text-lg font-normal hidden  md:flex font-poppins"
             >
               Users
             </div>
@@ -32,7 +32,7 @@
               />
             </div>
             <div
-              class="w-[99px] h-[43px] left-[60px] top-[1px] absolute invisible md:visible"
+              class="w-[99px] h-[43px] left-[60px] top-[1px] absolute hidden  md:flex"
             >
               <div
                 class="left-0 top-0 absolute text-slate-800 text-lg font-medium"
@@ -65,7 +65,7 @@
                   <img src="../asset/icons/todo.svg" />
                 </div>
                 <div
-                  class="text-black text-lg  invisible md:visible "
+                  class="text-black text-lg  hidden  md:flex "
                   :class="
                     selectedTab === 'todos'
                       ? 'text-violet-900'
@@ -90,7 +90,7 @@
                   <img src="../asset/icons/posts.svg" />
                 </div>
                 <div
-                  class="text-lg text-[#485B69] font-normal leading-tight  not-italic invisible md:visible"
+                  class="text-lg text-[#485B69] font-normal leading-tight  not-italic hidden  md:flex"
                   :class="
                     selectedTab === 'posts'
                       ? 'text-violet-900'
@@ -115,14 +115,14 @@
                   <img src="../asset/icons/albums.svg" />
                 </div>
                 <div
-                  class=" text-lg font-normal invisible md:visible"
+                  class=" text-lg font-normal hidden  md:flex"
                   :class="
                     selectedTab === 'albums'
                       ? 'text-violet-900'
                       : 'text-black  text-opacity-40'
                   "
                 >
-                  Albums
+                  Album
                 </div>
               </div>
             </div>

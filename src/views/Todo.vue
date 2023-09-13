@@ -8,7 +8,7 @@
       />
       <p class="font-poppins">Go Home</p>
     </div>
-      <div class="pt-[52px] max-h-screen overflow-y-auto thin-scrollbar">
+      <div class="pt-[52px] max-h-[100%] overflow-y-auto thin-scrollbar">
         <div v-for="(item, index) in itemList" :key="index" class="h-12 relative block">
         <div
           class="left-[48px] top-[14px] absolute text-[#485B69] text-sm font-normal leading-tight font-roboto not-italic"

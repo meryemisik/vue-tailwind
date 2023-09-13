@@ -16,6 +16,9 @@ module.exports = {
       width: {
         'fit-content': 'fit-content',
       },
+      screens: {
+        'xs': '320px',
+      },
     },
   },
   plugins: [],

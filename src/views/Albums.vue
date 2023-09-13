@@ -8,7 +8,7 @@
       />
       <p class="font-poppins">Go Home</p>
     </div>
-    <div class="max-h-screen overflow-y-auto thin-scrollbar flex flex-wrap justify-evenly">
+    <div class="max-h-[100%] overflow-y-auto thin-scrollbar flex flex-wrap justify-evenly">
       <div v-for="(i,index) in 12" :key="i" class="p-4 flex-initial sm:w-full md:w-[49%] xl:w-[23%] lg:w-[32%] " @click="this.$router.push('albums/detail')">
         <div
           class="bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer min-w-[100%]"

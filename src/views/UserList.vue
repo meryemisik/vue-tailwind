@@ -3,23 +3,23 @@
     <div class="flex font-semibold gap-6 text-center items-center">
       <p class="font-poppins text-xl">All Users</p>
     </div>
-    <div class=" user-list flex flex-wrap max-h-screen overflow-y-auto thin-scrollbar overflow-x min-w-[300px]">
-      <div v-for="user in userList" :key="user.id" class="p-4 flex grow shrink basis-1/3 min-w-100">
+    <div class=" flex flex-wrap max-h-[100%] overflow-y-auto thin-scrollbar overflow-x min-w-[300px]">
+      <div v-for="user in userList" :key="user.id" class="p-4 flex grow shrink basis-1/3 w-full md:max-w-[50%] lg:max-w-[33.3%]">
         <div
-          class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer min-w-[100%]"
+          class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[100%]"
           @click="selectUser(user)"
         >
           <div class="flex flex-col gap-4 flex-start w-full font-poppins">
             <div class="flex flex-start gap-8">
-              <div class="h-24 w-24">
+              <div class="">
                 <img
-                  src="../asset/image/profile.png"
+                src="../asset/image/profile.png"
                   class="h-full w-full rounded-full"
                 />
               </div>
-              <div class="flex flex-col justify-center ">
+              <div class="flex flex-col justify-center  break-all ">
                 <p class="text-lg  text-black font-medium break-words ">{{ user.name }}</p>
-                <p class="text-test font-light text-sm break-words">{{ user.email }}</p>
+                <p class="text-test font-light text-sm ">{{ user.email }}</p>
                 <p class="text-test font-light text-sm">{{ user.phone }}</p>
               </div>
             </div>
