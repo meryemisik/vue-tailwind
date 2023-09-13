@@ -7,16 +7,28 @@
 
 <script>
 import SideBar from "./components/SideBar.vue";
-import { mapGetters } from "vuex";
+import { computed, ref } from "vue";
+import { useStore } from "vuex";
+import { useRouter } from "vue-router";
+
 export default {
   name: "App",
   components: {
     SideBar,
   },
-  computed: {
-    ...mapGetters({
-      selectedUser : 'getSelectedUser'
-    }),
+  setup() {
+    const store = useStore();
+    const selectedUser = computed(() => store.getters.getSelectedUser);
+    const router = useRouter()
+    let currentUrl = window.location.pathname;
+    currentUrl = currentUrl.replace(/\//g, '');
+
+    store.commit("setSelectedTab", currentUrl);
+    router.push('/'+ currentUrl)
+
+    return {
+      selectedUser,
+    };
   },
 };
 </script>

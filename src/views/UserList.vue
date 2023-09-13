@@ -1,16 +1,18 @@
 <template>
   <div class="max-h-screen p-10">
+   
     <div class="flex font-semibold gap-6 text-center items-center">
       <p class="font-poppins text-xl">All Users</p>
     </div>
     <div class=" flex flex-wrap max-h-[100%] overflow-y-auto thin-scrollbar overflow-x min-w-[300px]">
-      <div v-for="user in userList" :key="user.id" class="p-4 flex grow shrink basis-1/3 w-full md:max-w-[50%] lg:max-w-[33.3%]">
+
+      <div v-for="user in userList" :key="user.id" class="p-4 flex grow shrink w-full lg:max-w-[50%] xl:max-w-[33.3%]">
         <div
           class="flex bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer w-[100%]"
           @click="selectUser(user)"
         >
           <div class="flex flex-col gap-4 flex-start w-full font-poppins">
-            <div class="flex flex-start gap-8">
+            <div class="flex flex-start items-start gap-8 ">
               <div class="">
                 <img
                 src="../asset/image/profile.png"
@@ -18,9 +20,9 @@
                 />
               </div>
               <div class="flex flex-col justify-center  break-all ">
-                <p class="text-lg  text-black font-medium break-words ">{{ user.name }}</p>
-                <p class="text-test font-light text-sm ">{{ user.email }}</p>
-                <p class="text-test font-light text-sm">{{ user.phone }}</p>
+                <p class="text-lg text-black font-medium  truncate xs:w-32 lg:w-40">{{ user.name }}</p>
+                <p class="text-test font-light text-sm truncate xs:w-32 lg:w-40">{{ user.email }}</p>
+                <p class="text-test font-light text-sm truncate xs:w-32 lg:w-40">{{ user.phone }}</p>
               </div>
             </div>
             <div class="flex flex-col gap-2">
@@ -94,6 +96,7 @@ export default {
       localStorage.setItem("selectedUser", JSON.stringify(user));
 
       router.push("/todos");
+      store.commit("setSelectedTab", 'todos');
     };
     onMounted(async () => {
       try {
@@ -106,6 +109,7 @@ export default {
       } catch (error) {
         console.error("API isteği sırasında hata oluştu:", error);
       }
+     
     });
 
     return {

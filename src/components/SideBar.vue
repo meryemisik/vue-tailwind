@@ -37,12 +37,12 @@
               <div
                 class="left-0 top-0 absolute text-slate-800 text-lg font-medium"
               >
-                <span class="block truncate break-words font-poppins font-medium">{{ selectedUser.name }}</span>
+                <span class="block truncate md:w-16 lg:w-32 break-words font-poppins font-medium">{{ selectedUser.name }}</span>
               </div>
               <div
                 class="left-0 top-[29px] absolute justify-start items-center gap-[3px] inline-flex"
               >
-                <div class="text-gray-500 text-sm font-light underline break-words font-josefin">
+                <div class="text-gray-500 text-sm font-light underline break-words font-josefin truncate md:w-16 lg:w-32 ">
                   {{ selectedUser.email }}
                 </div>
               </div>
