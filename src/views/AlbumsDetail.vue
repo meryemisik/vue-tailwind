@@ -6,12 +6,22 @@
     </div>
     <div class="max-h-[100%] flex flex-wrap mt-[32px]">
       <div class="">
-        <div class="w-full flex gap-8 items-start">
-          <img src="../asset/image/album9.png" class="object-contain w-full" />
-          <img src="../asset/image/album10.png" class="object-contain w-full" />
-          <img src="../asset/image/album11.png" class="object-contain w-full" />
-          <img src="../asset/image/album1.png" class="object-contain w-full" />
-          <img src="../asset/image/album7.png" class="object-contain w-full" />
+        <div class="w-full flex flex-wrap gap-8 items-start">
+          <div>
+            <img src="../asset/image/album9.png" class="object-contain w-full" />
+          </div>
+          <div>
+            <img src="../asset/image/album10.png" class="object-contain w-full" />
+          </div>
+          <div>
+            <img src="../asset/image/album11.png" class="object-contain w-full" />
+          </div>
+          <div>
+            <img src="../asset/image/album1.png" class="object-contain w-full" />
+          </div>
+          <div>
+            <img src="../asset/image/album7.png" class="object-contain w-full" />
+          </div>
         </div>
       </div>
     </div>

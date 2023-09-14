@@ -5,26 +5,26 @@
       <p class="font-poppins">Go Home</p>
     </div>
     <div class="max-h-[100%] overflow-y-auto thin-scrollbar flex flex-wrap justify-evenly">
-      <div v-for="(i, index) in 12" :key="i" class="p-4 flex-initial sm:w-full md:w-[49%] xl:w-[23%] lg:w-[32%]"
+      <div v-for="(i, index) in 12" :key="i" class="p-4 flex-initial w-full lg:max-w-[50%] xl:max-w-[33.3%]"
         @click="this.$router.push('albums/detail')">
         <div
           class="bg-white border rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer min-w-[100%]">
           <div class="flex flex-col gap-4 flex-start w-full">
             <div class="flex flex-start">
               <div class="flex-grow-0 flex-shrink-0 w-1/2 p-0">
-                <img v-if="index % 2 == 0" src="../asset/image/album1.png" class="object-cover w-full h-20" />
-                <img v-else src="../asset/image/album5.png" class="object-cover w-full h-20" />
-                <img v-if="index % 3 == 0" src="../asset/image/album10.png" class="object-cover w-full h-20" />
-                <img v-else src="../asset/image/album11.png" class="object-cover w-full h-20" />
+                <img v-if="index % 2 == 0" src="../asset/image/album1.png" class="object-cover w-full h-28" />
+                <img v-else src="../asset/image/album5.png" class="object-cover w-full h-28" />
+                <img v-if="index % 3 == 0" src="../asset/image/album10.png" class="object-cover w-full h-28" />
+                <img v-else src="../asset/image/album11.png" class="object-cover w-full h-28" />
               </div>
               <div class="flex-grow-0 flex-shrink-0 w-1/2 p-0">
-                <img v-if="index % 4 == 0" src="../asset/image/album2.png" class="object-cover w-full h-20" />
-                <img v-else src="../asset/image/album4.png" class="object-cover w-full h-20" />
-                <img v-if="index % 5 == 0" src="../asset/image/album7.png" class="object-cover w-full h-20" />
-                <img v-else src="../asset/image/album3.png" class="object-cover w-full h-20" />
+                <img v-if="index % 4 == 0" src="../asset/image/album2.png" class="object-cover w-full h-28" />
+                <img v-else src="../asset/image/album4.png" class="object-cover w-full h-28" />
+                <img v-if="index % 5 == 0" src="../asset/image/album7.png" class="object-cover w-full h-28" />
+                <img v-else src="../asset/image/album3.png" class="object-cover w-full h-28" />
               </div>
             </div>
-            <div class="text-[#26303E] text-sm font-roboto">
+            <div class="text-black text-sm font-roboto">
               Non esse culpa molestiae omnis sed ol...
             </div>
           </div>

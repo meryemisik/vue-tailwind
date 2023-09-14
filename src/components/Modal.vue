@@ -1,11 +1,11 @@
 <template>
   <div
-    class="xs:w-[100%] w-[55%] mx-auto h-[609px] px-8 py-9 bg-white rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex"
+    class="xs:w-[100%] md:w-[55%] mx-auto h-[609px] px-8 py-9 bg-white rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex"
   >
     <div class="flex items-center justify-between w-full">
       <div
         v-if="post"
-        class="text-2xl text-[#26303E] font-medium leading-tight tracking-wide"
+        class="text-2xl text-black font-medium leading-tight tracking-wide"
       >
         {{ post.title }}
       </div>

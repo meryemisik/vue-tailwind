@@ -25,7 +25,7 @@
         ></div>
         <div class="flex justify-end">
           <div
-            class="text-[#26303E] text-sm font-normal leading-tight tracking-tight flex items-center gap-6 font-poppins"
+            class="text-black text-sm font-normal leading-tight tracking-tight flex items-center gap-6 font-poppins"
           >
             See More
             <img
