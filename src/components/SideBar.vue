@@ -31,7 +31,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-full h-[0px] border border-zinc-300 mt-[20px]"></div>
+            <!-- <div class="w-full h-[0px] border border-zinc-300 mt-[20px]"></div> -->
           </div>
           <div
             class="font-poppins left-0 top-[124px] absolute flex-col justify-start items-start gap-6 inline-flex w-2/12">
