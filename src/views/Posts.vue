@@ -20,7 +20,7 @@
           {{ post.title }}
         </div>
         <div
-          class="text-black text-opacity-70 text-sm font-normal leading-tight tracking-tight font-poppins leading-5 tracking-[0.28px]"
+          class="text-black text-opacity-70 text-sm font-normal tracking-tight font-poppins leading-5 tracking-[0.28px]"
           v-html="getFirst30Words(post.body)"
         ></div>
         <div class="flex justify-end">
